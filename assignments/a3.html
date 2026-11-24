@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Assignment 3 - Forms</title>
+</head>
+<body>
+
+<h1>HTML Assignment 3 - Forms</h1>
+
+<h2>Basic Questions</h2>
+
+<!-- 1. Username -->
+<h3>1. Username</h3>
+<form>
+    Username: <input type="text" name="username">
+</form>
+
+<!-- 2. Password -->
+<h3>2. Password</h3>
+<form>
+    Password: <input type="password" name="password">
+</form>
+
+<!-- 3. First Name and Last Name -->
+<h3>3. First Name and Last Name</h3>
+<form>
+    First Name: <input type="text">
+    Last Name: <input type="text">
+</form>
+
+<!-- 4. Submit Button -->
+<h3>4. Submit Button</h3>
+<form>
+    Name: <input type="text">
+    <input type="submit" value="Submit">
+</form>
+
+<!-- 5. Reset Button -->
+<h3>5. Reset Button</h3>
+<form>
+    Name: <input type="text">
+    Email: <input type="email">
+    <input type="reset" value="Reset">
+</form>
+
+<!-- 6. Gender Radio Buttons -->
+<h3>6. Gender</h3>
+<form>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+</form>
+
+<!-- 7. Hobbies -->
+<h3>7. Hobbies</h3>
+<form>
+    <input type="checkbox"> Reading
+    <input type="checkbox"> Sports
+    <input type="checkbox"> Coding
+</form>
+
+<!-- 8. File Upload -->
+<h3>8. Profile Picture</h3>
+<form>
+    <input type="file" accept="image/*">
+</form>
+
+<!-- 9. Label -->
+<h3>9. Label</h3>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+</form>
+
+<!-- 10. Country Dropdown -->
+<h3>10. Country</h3>
+<form>
+    <select>
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+        <option>Canada</option>
+    </select>
+</form>
+
+<!-- 11. Textarea -->
+<h3>11. Comments</h3>
+<form>
+    <textarea rows="4" cols="30"></textarea>
+</form>
+
+<!-- 12. Button -->
+<h3>12. Click Me Button</h3>
+<form>
+    <button type="button">Click Me</button>
+</form>
+
+<!-- 13. Required Input -->
+<h3>13. Required Name</h3>
+<form>
+    Name: <input type="text" required>
+    <input type="submit">
+</form>
+
+<!-- 14. Email Validation -->
+<h3>14. Email</h3>
+<form>
+    Email: <input type="email">
+    <input type="submit">
+</form>
+
+<!-- 15. Age -->
+<h3>15. Age</h3>
+<form>
+    Age: <input type="number">
+</form>
+
+<!-- 16. Birthdate -->
+<h3>16. Birthdate</h3>
+<form>
+    Birthdate: <input type="date">
+</form>
+
+<!-- 17. Appointment Time -->
+<h3>17. Appointment Time</h3>
+<form>
+    Time: <input type="time">
+</form>
+
+<!-- 18. Favourite Colour -->
+<h3>18. Favourite Colour</h3>
+<form>
+    Colour: <input type="color">
+</form>
+
+<!-- 19. Volume Range -->
+<h3>19. Volume</h3>
+<form>
+    Volume: <input type="range" min="1" max="100">
+</form>
+
+<!-- 20. Fieldset and Legend -->
+<h3>20. Personal Details</h3>
+<form>
+    <fieldset>
+        <legend>Personal Details</legend>
+        Name: <input type="text"><br><br>
+        Email: <input type="email">
+    </fieldset>
+</form>
+
+
+<h2>Intermediate Questions</h2>
+
+<!-- 1. Login Form -->
+<h3>1. Login Form</h3>
+<form>
+    Username: <input type="text"><br><br>
+    Password: <input type="password"><br><br>
+    <input type="submit" value="Login">
+</form>
+
+<!-- 2. Contact Form -->
+<h3>2. Contact Form</h3>
+<form>
+    Name: <input type="text"><br><br>
+    Email: <input type="email"><br><br>
+    Phone: <input type="tel"><br><br>
+    Message:<br>
+    <textarea rows="4" cols="30"></textarea><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<!-- 3. Payment Method -->
+<h3>3. Payment Method</h3>
+<form>
+    <input type="radio" name="payment"> Credit Card
+    <input type="radio" name="payment"> UPI
+    <input type="radio" name="payment"> Cash on Delivery
+</form>
+
+<!-- 4. Languages -->
+<h3>4. Languages</h3>
+<form>
+    <input type="checkbox"> English
+    <input type="checkbox"> Hindi
+    <input type="checkbox"> French
+    <input type="checkbox"> Spanish
+</form>
+
+<!-- 5. Age 18-60 -->
+<h3>5. Age Between 18 and 60</h3>
+<form>
+    Age: <input type="number" min="18" max="60">
+    <input type="submit">
+</form>
+
+<!-- 6. Phone Pattern -->
+<h3>6. Phone Number Validation</h3>
+<form>
+    Phone: <input type="text" pattern="[0-9]{10}"
+    title="Enter 10 digit phone number">
+    <input type="submit">
+</form>
+
+<!-- 7. PDF Upload -->
+<h3>7. PDF File Upload</h3>
+<form>
+    Upload PDF: <input type="file" accept=".pdf">
+</form>
+
+<!-- 8. Profession -->
+<h3>8. Profession</h3>
+<form>
+    <select>
+        <option>Student</option>
+        <option>Teacher</option>
+        <option>Developer</option>
+        <option>Designer</option>
+    </select>
+</form>
+
+<!-- 9. Terms and Conditions -->
+<h3>9. Terms and Conditions</h3>
+<form>
+    <input type="checkbox" id="terms"
+    onchange="document.getElementById('termsSubmit').disabled = !this.checked">
+    I accept Terms and Conditions
+    <br><br>
+    <input type="submit" id="termsSubmit" disabled>
+</form>
+
+<!-- 10. Address Fieldset -->
+<h3>10. Address Details</h3>
+<form>
+    <fieldset>
+        <legend>Address Details</legend>
+        House No: <input type="text"><br><br>
+        City: <input type="text"><br><br>
+        State: <input type="text"><br><br>
+        Pincode: <input type="text">
+    </fieldset>
+</form>
+
+<!-- 11. Email Validation -->
+<h3>11. Email Validation</h3>
+<form>
+    Email: <input type="email" placeholder="abc@mail.com" required>
+    <input type="submit">
+</form>
+
+<!-- 12. Placeholder -->
+<h3>12. Placeholder</h3>
+<form>
+    <input type="text" placeholder="Enter your name">
+    <input type="email" placeholder="Enter your email">
+</form>
+
+<!-- 13. Confirm Password -->
+<h3>13. Confirm Password</h3>
+<form>
+    Password: <input type="password"><br><br>
+    Confirm Password: <input type="password">
+</form>
+
+<!-- 14. Reset Form -->
+<h3>14. Reset Form</h3>
+<form>
+    Name: <input type="text"><br><br>
+    Email: <input type="email"><br><br>
+    <input type="reset" value="Reset">
+</form>
+
+<!-- 15. Newsletter -->
+<h3>15. Newsletter Signup</h3>
+<form>
+    Name: <input type="text"><br><br>
+    Email: <input type="email"><br><br>
+    <input type="submit" value="Subscribe">
+</form>
+
+<!-- 16. Disabled and Readonly -->
+<h3>16. Disabled and Readonly</h3>
+<form>
+    Disabled: <input type="text" value="Disabled" disabled><br><br>
+    Readonly: <input type="text" value="Readonly" readonly>
+</form>
+
+<!-- 17. Hidden Input -->
+<h3>17. Hidden Input</h3>
+<form>
+    Name: <input type="text"><br>
+    <input type="hidden" name="userid" value="101">
+    <input type="submit">
+</form>
+
+<!-- 18. Rating Range -->
+<h3>18. Experience Rating</h3>
+<form>
+    Rating: <input type="range" min="1" max="10">
+</form>
+
+<!-- 19. Background Colour Picker -->
+<h3>19. Background Colour Picker</h3>
+<form>
+    Choose Colour:
+    <input type="color" onchange="document.body.style.backgroundColor=this.value">
+</form>
+
+<!-- 20. Telephone -->
+<h3>20. Telephone Input</h3>
+<form>
+    Phone Number: <input type="tel" placeholder="Enter phone number">
+</form>
+
+
+<h2>Advanced Questions</h2>
+
+<!-- 1. Registration Form -->
+<h3>1. Registration Form</h3>
+<form>
+    Name: <input type="text" required><br><br>
+    Email: <input type="email" required><br><br>
+    Password: <input type="password" required><br><br>
+    Confirm Password: <input type="password" required><br><br>
+
+    Gender:
+    <input type="radio" name="reggender" required> Male
+    <input type="radio" name="reggender"> Female
+    <br><br>
+
+    Country:
+    <select required>
+        <option value="">Select Country</option>
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Register">
+</form>
+
+<!-- 2. Password Pattern -->
+<h3>2. Password Pattern</h3>
+<form>
+    Password:
+    <input type="password"
+    pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+    title="At least 8 characters, one capital letter and one number"
+    required>
+    <input type="submit">
+</form>
+
+<!-- 3. Multi Step Form -->
+<h3>3. Multi-Step Form</h3>
+
+<form id="multiForm">
+
+    <div id="step1">
+        <h4>Step 1: Personal Information</h4>
+        Name: <input type="text" id="mname" required><br><br>
+        Age: <input type="number" id="mage" required><br><br>
+        <button type="button" onclick="nextStep()">Next</button>
+    </div>
+
+    <div id="step2" style="display:none">
+        <h4>Step 2: Contact Information</h4>
+        Email: <input type="email" id="memail" required><br><br>
+        Phone: <input type="tel" id="mphone" required><br><br>
+        <button type="button" onclick="previousStep()">Previous</button>
+        <button type="button" onclick="nextStep2()">Next</button>
+    </div>
+
+    <div id="step3" style="display:none">
+        <h4>Step 3: Submit</h4>
+        <p>Check your details and submit.</p>
+        <button type="button" onclick="previousStep2()">Previous</button>
+        <input type="submit" value="Submit">
+    </div>
+
+</form>
+
+<script>
+function nextStep() {
+    if (document.getElementById("mname").value == "" ||
+        document.getElementById("mage").value == "") {
+        alert("Please fill Personal Information");
+    } else {
+        document.getElementById("step1").style.display = "none";
+        document.getElementById("step2").style.display = "block";
+    }
+}
+
+function nextStep2() {
+    if (document.getElementById("memail").value == "" ||
+        document.getElementById("mphone").value == "") {
+        alert("Please fill Contact Information");
+    } else {
+        document.getElementById("step2").style.display = "none";
+        document.getElementById("step3").style.display = "block";
+    }
+}
+
+function previousStep() {
+    document.getElementById("step2").style.display = "none";
+    document.getElementById("step1").style.display = "block";
+}
+
+function previousStep2() {
+    document.getElementById("step3").style.display = "none";
+    document.getElementById("step2").style.display = "block";
+}
+</script>
+
+<!-- 4. Survey Form -->
+<h3>4. Survey Form</h3>
+<form>
+    Name: <input type="text"><br><br>
+
+    Gender:
+    <input type="radio" name="surveyGender"> Male
+    <input type="radio" name="surveyGender"> Female
+    <br><br>
+
+    Hobbies:
+    <input type="checkbox"> Reading
+    <input type="checkbox"> Sports
+    <input type="checkbox"> Music
+    <br><br>
+
+    Country:
+    <select>
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+    </select>
+    <br><br>
+
+    Feedback:<br>
+    <textarea rows="4" cols="30"></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit Survey">
+</form>
+
+<!-- 5. Job Application -->
+<h3>5. Job Application Form</h3>
+<form>
+    Name: <input type="text"><br><br>
+    Email: <input type="email"><br><br>
+    Resume:
+    <input type="file" accept=".pdf,.doc,.docx">
+    <br><br>
+    <input type="submit" value="Apply">
+</form>
+
+<!-- 6. Required Fields -->
+<h3>6. Required Fields</h3>
+<form>
+    Name: <input type="text" required><br><br>
+    Email: <input type="email" required><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<!-- 7. Accessibility -->
+<h3>7. Accessible Form</h3>
+<form role="form" aria-label="Accessible form">
+    <label for="accessibleName">Name:</label>
+    <input type="text" id="accessibleName" aria-label="Enter your name">
+    <br><br>
+
+    <label for="accessibleEmail">Email:</label>
+    <input type="email" id="accessibleEmail" aria-label="Enter your email">
+    <br><br>
+
+    <label for="accessibleMessage">Message:</label>
+    <textarea id="accessibleMessage" aria-label="Enter message"></textarea>
+    <br><br>
+
+    <input type="submit">
+</form>
+
+<!-- 8. Future Date -->
+<h3>8. Booking Date</h3>
+<form>
+    Date:
+    <input type="date" id="bookingDate" required>
+    <input type="submit">
+</form>
+
+<script>
+document.getElementById("bookingDate").min =
+    new Date().toISOString().split("T")[0];
+</script>
+
+<!-- 9. Profile Settings -->
+<h3>9. Profile Settings</h3>
+<form>
+    Name: <input type="text"><br><br>
+
+    Profile Picture:
+    <input type="file" accept="image/*"><br><br>
+
+    Theme Colour:
+    <input type="color"><br><br>
+
+    <input type="submit" value="Save">
+</form>
+
+<!-- 10. Feedback Form -->
+<h3>10. Feedback Form</h3>
+<form>
+    Name: <input type="text"><br><br>
+
+    Rating:
+    <input type="radio" name="rating" value="1"> 1
+    <input type="radio" name="rating" value="2"> 2
+    <input type="radio" name="rating" value="3"> 3
+    <input type="radio" name="rating" value="4"> 4
+    <input type="radio" name="rating" value="5"> 5
+    <br><br>
+
+    Comment:<br>
+    <textarea rows="4" cols="30"></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit Feedback">
+</form>
+
+</body>
+</html>
